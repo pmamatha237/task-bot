@@ -1,0 +1,18 @@
+<h3>Edit a Robot</h3>
+<%= form_with model: @robot, local: true do |form| %>
+ <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :slogan %><br>
+    <%= form.text_field :slogan %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>
+<%= link_to 'Back', robots_path  %>
